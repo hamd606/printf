@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <string.h>
 
 int _strlen(const char *);
 int print(char *);
@@ -12,6 +13,7 @@ int _printf(const char *, ...);
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
 int print_str(va_list);
+int print_upper_str(va_list list);
 int print_char(va_list);
 int print_int(va_list);
 int print_binary(va_list);
@@ -24,7 +26,7 @@ int print_ptr(va_list);
 int print_rev_str(va_list);
 int _putchar(char);
 int buffer(char);
-
+char * str_to_upper(char *c);
 /**
  * struct _format - Format struct
  * @type: format
