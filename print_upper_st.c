@@ -8,7 +8,6 @@
 int print_upper_str(va_list list)
 {
 	char *m;
-	int m_len;
 	int i;
 	char hex_prefix[] = "\\x0";
 	char big_hex[] = "\\x";
@@ -29,4 +28,5 @@ int print_upper_str(va_list list)
 		else
 			_putchar(m[i]);
 	}
+	return (1110);
 }
